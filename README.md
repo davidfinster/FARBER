@@ -7,7 +7,7 @@ Mozilla Public License Version 2.0
 
 Icon made by pixelmeetup from www.flaticon.com - https://www.flaticon.com/authors/pixelmeetup
 
-A signed Firefox plugin is [available here](https://github.com/dfinster/FARBER/blob/master/farber-2.0.1-fx.xpi).  
+A signed Firefox plugin is [available here](https://github.com/dfinster/FARBER/raw/master/farber-2.0.1-fx.xpi).  
 
 Change Log:
 
