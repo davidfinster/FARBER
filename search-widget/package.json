@@ -1,8 +1,8 @@
 {
-  "name": "search-widget-find-and-replace",
+  "name": "farber",
   "version": "1.0.0",
-  "description": "Search UI widget for Find & Replace browser extension",
-  "author": "Dalimil Hajek",
+  "description": "Search UI widget for FARBER",
+  "author": "David Finster",
   "main": "index.js",
   "license": "MPL-2.0",
   "scripts": {

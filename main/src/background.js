@@ -2,9 +2,6 @@
 // Console log messages will not be shown (only shown in special console)
 
 function setUpExtensionInstallEvents() {
-  if (chrome && chrome.runtime && chrome.runtime.setUninstallURL) {
-    chrome.runtime.setUninstallURL("https://find-and-replace-f6588.firebaseapp.com/uninstall");
-  }
 
   chrome.runtime.onInstalled.addListener(details => {
     if (details && details.reason && details.reason == 'install') {

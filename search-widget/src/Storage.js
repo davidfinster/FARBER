@@ -32,17 +32,20 @@ class Storage {
     this.clientIdPromise = this.getFromStorage(this.clientIdKey);
     // clientid: 'string-id'
 
+    /* DFinster - remove analytics
     this.analyticsEnabledKey = 'analytics-enabled';
     this.analyticsEnabledPromise = this.getFromStorage(this.analyticsEnabledKey);
     // analytics-enabled: true
+    */
 
     this.initialValues = {
       [this.favouritesKey]: {},
       [this.searchStateKey]: {},
       [this.historyKey]: [],
       [this.templatesKey]: {},
-      [this.clientIdKey]: '',
-      [this.analyticsEnabledKey]: true
+      [this.clientIdKey]: ''
+      // ,
+      // [this.analyticsEnabledKey]: true
     };
   }
 
@@ -83,6 +86,8 @@ class Storage {
     });
   }
 
+  /* DFinster - remove analytics
+
   setAnalyticsEnabled(enabled) {
     if (this.dummy) return;
 
@@ -99,6 +104,7 @@ class Storage {
 
     return this.analyticsEnabledPromise;
   }
+*/
 
   addToHistory(searchState) {
     if (this.dummy) return;

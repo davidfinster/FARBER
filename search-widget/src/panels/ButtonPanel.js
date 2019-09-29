@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 
 import Storage from '../Storage';
 import Logger from '../Logger';
-import Analytics from '../Analytics';
+// import Analytics from '../Analytics';
 
 import FavouritesPanel from './FavouritesPanel';
 import HistoryPanel from './HistoryPanel';
@@ -71,7 +71,7 @@ class ButtonPanel extends React.Component {
     if (wasClosed) {
       this.props.onPanelOpened();
     }
-    Analytics.sendPageView(tab);
+//    Analytics.sendPageView(tab);
   }
 
   closePanels() {

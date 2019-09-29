@@ -7,7 +7,7 @@ import AdvancedSearchInfo from './AdvancedSearchInfo';
 
 import ConnectionApi from './ConnectionApi';
 import Storage from './Storage';
-import Analytics from './Analytics';
+// import Analytics from './Analytics';
 
 class Main extends React.Component {
   constructor(props) {
@@ -66,7 +66,7 @@ class Main extends React.Component {
       // Sometimes empty {} object - that's OK
       this.updateStateFromSaved(prevSearchState, /* saveSearchState */ false);
     });
-    Analytics.sendPageView("search");
+    // Analytics.sendPageView("search");
   }
 
   updateStateFromSaved(savedPartialState, saveSearchState) {
@@ -209,7 +209,7 @@ class Main extends React.Component {
     this.setState({
       advancedSearchExpanded: expanded
     });
-    Analytics.sendEvent("advanced-search", `advanced-search-${expanded ? "enabled" : "disabled"}`);
+    // Analytics.sendEvent("advanced-search", `advanced-search-${expanded ? "enabled" : "disabled"}`);
   }
 
   resetAdvancedSearchOptions() {
@@ -228,7 +228,7 @@ class Main extends React.Component {
     this.setState({
       addedToFavourites: !alreadyAdded
     });
-    Analytics.sendEvent("favourites", `favourite-${alreadyAdded ? "removed" : "added"}`);
+    // Analytics.sendEvent("favourites", `favourite-${alreadyAdded ? "removed" : "added"}`);
   }
 
   getSearchStateForHistory() {

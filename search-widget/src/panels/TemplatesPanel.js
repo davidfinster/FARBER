@@ -4,7 +4,7 @@ import FontAwesome from 'react-fontawesome';
 import Logger from '../Logger';
 import Storage from '../Storage';
 import ConnectionApi from '../ConnectionApi';
-import Analytics from '../Analytics';
+// import Analytics from '../Analytics';
 
 class TemplatesPanel extends React.Component {
   constructor(props) {
@@ -79,7 +79,7 @@ class TemplatesPanel extends React.Component {
       text: templateText
     });
     if (templateText) {
-      Analytics.sendEvent("templates", "template-pasted");
+    // Analytics.sendEvent("templates", "template-pasted");
     }
   }
 
@@ -138,7 +138,7 @@ class TemplatesPanel extends React.Component {
   handleCreateNewTemplate() {
     Storage.addToTemplates("(New Template) - Click the pencil icon to edit.",
       "This is the template text that will be pasted at your cursor location.");
-    Analytics.sendEvent("templates", "new-template-created");
+    // Analytics.sendEvent("templates", "new-template-created");
   }
 
   changeTextToLowerCase() {
@@ -148,7 +148,7 @@ class TemplatesPanel extends React.Component {
       text: "",
       lowerCaseTransform: true
     });
-    Analytics.sendEvent("templates", "template-lower-case-applied");
+    // Analytics.sendEvent("templates", "template-lower-case-applied");
   }
 
   changeTextToUpperCase() {
@@ -158,7 +158,7 @@ class TemplatesPanel extends React.Component {
       text: "",
       upperCaseTransform: true
     });
-    Analytics.sendEvent("templates", "template-upper-case-applied");
+    // Analytics.sendEvent("templates", "template-upper-case-applied");
   }
 
   revertToOriginalTextTransformedText() {
@@ -170,7 +170,7 @@ class TemplatesPanel extends React.Component {
     ConnectionApi.insertTemplate({
       text: templateText
     });
-    Analytics.sendEvent("templates", "template-case-reversed");
+    // Analytics.sendEvent("templates", "template-case-reversed");
   }
 
   renderTextCaseTransformationTemplates() {
