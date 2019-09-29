@@ -9,9 +9,11 @@ Icon made by pixelmeetup from www.flaticon.com - https://www.flaticon.com/author
 
 Change Log:
 
+Version 2.0.1 - 2019-09-29
+Removed ClientID logic. No longer needed after removing analytics.
+
 Version 2.0 - 2019-09-28
 Forked from version 1.3.17. Removed analytics, updated help dialog, added enhancements for Zoho Books.
 
-Version 2.0.1 - 2019-09-29
-Removed ClientID logic. No longer needed after removing analytics.
+
 
