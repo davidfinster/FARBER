@@ -684,81 +684,23 @@ exports[`HelpPanel renders correctly 1`] = `
       }
     }
   >
-    Find & Replace for Text Editing
+    FARBER (Find & Replace for Text Editing Redux)
   </div>
   <div
     className="help-panel-links"
   >
-    <a
-      href="https://find-and-replace-f6588.firebaseapp.com/feedback"
-      onClick={[Function]}
-    >
-      Feedback
-    </a>
-    <a
-      href="https://find-and-replace-f6588.firebaseapp.com/"
-      onClick={[Function]}
-    >
-      Website
-    </a>
-    <a
-      href="https://www.paypal.me/Dalimil/5USD"
-      onClick={[Function]}
-    >
-      Contribute
-    </a>
     <a
       href="/help.html"
       onClick={[Function]}
     >
       Help
     </a>
-  </div>
-  <div
-    className="help-panel-footnote"
-  >
-    Made with 
-    <span
-      aria-hidden={true}
-      className="fa fa-heart-o"
-    />
-     by Dalimil. Thank you for your support!
-  </div>
-  <div
-    className="help-panel-footnote"
-  >
     <a
-      href="https://www.iubenda.com/privacy-policy/8243040"
+      href="/about.html"
       onClick={[Function]}
     >
-      Privacy Policy
+      About
     </a>
-    Usage reporting:
-    <label
-      className="switch"
-      style={
-        Object {
-          "marginLeft": "-5px",
-          "marginTop": "-4px",
-          "transform": "scale(0.75)",
-        }
-      }
-    >
-      <input
-        checked={true}
-        className="switch-input"
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span
-        className="switch-label"
-        data-off="Off"
-        data-on="On"
-      />
-      <span
-        className="switch-handle"
-      />
-    </label>
   </div>
 </div>
 `;
@@ -937,7 +879,7 @@ exports[`TemplatesPanel renders correctly 1`] = `
       <span
         className="templates-panel-title-note-success"
       >
-        (Click to paste)
+        (Click to activate)
       </span>
     </span>
     <span

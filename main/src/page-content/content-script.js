@@ -562,10 +562,10 @@ function shutdown() {
   clearEditableAreaGlows();
   $(TEXTAREA_SELECTOR, Context.doc).highlightWithinTextarea('destroy');
 
-  /*  DFinster - 2019-09-28 - hack for Zoho Books.
-      Loop through and focus all textareas then focus and blur the first one 
-      to force the browser to scroll near the top. 'tis hokey, but works.
-      This forces Zoho Books to save the values.
+  /*  DFinster - 2019-09-28 - For Zoho Books.
+      Loop through and focus all textareas. Then focus and blur the first one 
+      again to force the browser to scroll near the top. It's lame, but it works.
+      This forces the textarea events to bubble, so Zoho Books will save the values.
   */ 
   $(TEXTAREA_SELECTOR, Context.doc).each(function(index, el) { $(el).focus(); });
   $(TEXTAREA_SELECTOR, Context.doc)[0].focus();

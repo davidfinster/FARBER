@@ -28,24 +28,11 @@ class Storage {
     // templates: { templateHash: { title: "title", text: "template text" } }
     this.templatesObservers = [];
 
-    this.clientIdKey = 'clientid';
-    this.clientIdPromise = this.getFromStorage(this.clientIdKey);
-    // clientid: 'string-id'
-
-    /* DFinster - remove analytics
-    this.analyticsEnabledKey = 'analytics-enabled';
-    this.analyticsEnabledPromise = this.getFromStorage(this.analyticsEnabledKey);
-    // analytics-enabled: true
-    */
-
     this.initialValues = {
       [this.favouritesKey]: {},
       [this.searchStateKey]: {},
       [this.historyKey]: [],
-      [this.templatesKey]: {},
-      [this.clientIdKey]: ''
-      // ,
-      // [this.analyticsEnabledKey]: true
+      [this.templatesKey]: {}
     };
   }
 
@@ -69,42 +56,6 @@ class Storage {
       [this.searchStateKey]: searchState
     });
   }
-
-  getClientId() {
-    if (this.dummy) return Promise.resolve("_dummyClientId");
-
-    return this.clientIdPromise = this.clientIdPromise.then(currentId => {
-      if (!currentId) {
-        const newClientId = this.generateUserId_();
-        chrome.storage.local.set({
-          [this.clientIdKey]: newClientId
-        });
-        // Return immediately (there's no need to wait for the actual storage sync)
-        return newClientId;
-      }
-      return currentId;
-    });
-  }
-
-  /* DFinster - remove analytics
-
-  setAnalyticsEnabled(enabled) {
-    if (this.dummy) return;
-
-    this.analyticsEnabledPromise = this.analyticsEnabledPromise.then(() => {
-      chrome.storage.local.set({
-        [this.analyticsEnabledKey]: enabled
-      });
-      return enabled;
-    });
-  }
-
-  isAnalyticsEnabled() {
-    if (this.dummy) return Promise.resolve(false);
-
-    return this.analyticsEnabledPromise;
-  }
-*/
 
   addToHistory(searchState) {
     if (this.dummy) return;
@@ -271,7 +222,7 @@ class Storage {
     if (this.dummy) {
       func({
         'a': { title: 'abc', text: 'cdf' },
-        'b': { title: 'signature', text: 'Dalimil Hajek' },
+        'b': { title: 'signature', text: 'John Doe' },
         'c': { title: 'abc', text: 'This is a long text specified as template ' +
             'content, mouse hover tooltip should wrap the preview of this template.' }
       });
@@ -295,14 +246,6 @@ class Storage {
       return (a & a);
     }, 0).toString();
     return hashText(title) + "_" + hashText(text);
-  }
-
-  generateUserId_() {
-    // Taken from https://stackoverflow.com/a/2117523
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-      return v.toString(16);
-    });
   }
 
   reset() {
