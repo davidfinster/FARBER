@@ -26,9 +26,9 @@ class HelpPanel extends React.Component {
       <div className="help-panel">
         <div className="help-panel-title"><FontAwesome name='question-circle' fixedWidth={true} /> Help</div>
         <img className="help-panel-icon" src='/images/icon48.png' />
-        <div style={{ fontWeight: 'bold' }} >FARBER (Find &amp; Replace for Text Editing Redux)</div>
+        <div style={{ fontWeight: 'bold' }} >FARBER (Find and Replace for Text Editing Redux)</div>
         <div className="help-panel-links">
-          <a onClick={this.navigate} href={this.helpUrl} >Help</a> 
+          <a onClick={this.navigate} href={this.helpUrl} >User Guide</a> 
           <a onClick={this.navigate} href={this.baseUrl} >About</a> 
         </div>
       </div>
