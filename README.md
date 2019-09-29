@@ -7,6 +7,8 @@ Mozilla Public License Version 2.0
 
 Icon made by pixelmeetup from www.flaticon.com - https://www.flaticon.com/authors/pixelmeetup
 
+A signed Firefox plugin is available here.  
+
 Change Log:
 
 Version 2.0.1 - 2019-09-29
