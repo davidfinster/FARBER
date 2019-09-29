@@ -5,7 +5,7 @@ function setUpExtensionInstallEvents() {
 
   chrome.runtime.onInstalled.addListener(details => {
     if (details && details.reason && details.reason == 'install') {
-      chrome.tabs.create({ url: "help.html" });
+      chrome.tabs.create({ url: "about.html" });
     }
   });
 }
