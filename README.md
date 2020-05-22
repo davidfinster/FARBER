@@ -6,9 +6,9 @@ FARBER (Find and Replace Browser Extension Redux) is a fork of [Find and Replace
 A signed Firefox plugin is [available here](https://github.com/dfinster/FARBER/releases/download/2.0.1/farber-2.0.1-fx.xpi).  
 
 
-In version 1.3.19 the extension began collecting email addresses and some functions were placed behind a $3.99/month paywall. It also uses analytics to track your behavior. Because version 1.3.17 is open source under Mozilla Public License Version 2.0, FARBER was born.
+In version 1.3.19 the extension began collecting email addresses and some functions were placed behind a $3.99/month paywall. It also used analytics to track your behavior. Because version 1.3.17 is open source under Mozilla Public License Version 2.0, FARBER was born.
 
-FARBER is maintained by David Finster. This extension is a critical part of my Zoho Books consulting business. If it helps you, you are welcome to use it or fork my GitHub repository.
+FARBER is maintained by David Finster. If it helps you, you are welcome to use it or fork my GitHub repository.
 
 FARBER features:
 
@@ -21,9 +21,7 @@ FARBER features:
 
 The icon is by [pixelmeetup](https://www.flaticon.com/authors/pixelmeetup) from www.flaticon.com.
 
-Visit the [FARBER website](https://finsterbt.com/farber/) for more information.
-
-FARBER is provided ​“AS IS”. David Finster makes no warranties, express or implied, and hereby disclaims all implied warranties, including any warranty of merchantability and warranty of fitness for a particular purpose.
+FARBER is provided “AS IS”. David Finster makes no warranties, express or implied, and hereby disclaims all implied warranties, including any warranty of merchantability and warranty of fitness for a particular purpose.
 
 This may destroy your data. Please see the [user guide](https://finsterbt.com/farber/farber-user-guide/). 
 
@@ -33,6 +31,3 @@ Change Log:
 Removed ClientID logic. No longer needed after removing analytics.
 * Version 2.0 - 2019-09-28
 Forked from version 1.3.17. Removed analytics, updated help dialog, added enhancements for Zoho Books.
-
-
-
