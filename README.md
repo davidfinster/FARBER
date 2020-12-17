@@ -20,9 +20,7 @@ FARBER features:
 
 The icon is by [pixelmeetup](https://www.flaticon.com/authors/pixelmeetup) from www.flaticon.com.
 
-FARBER is provided “AS IS”. David Finster makes no warranties, express or implied, and hereby disclaims all implied warranties, including any warranty of merchantability and warranty of fitness for a particular purpose.
-
-This may destroy your data. 
+Provided “AS IS”. No warranties, express or implied. This may destroy your data. 
 
 Change Log:
 
